@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/bg_1.jpg);
+    background-image: url(../images/bg_1.jpg);
     background-size: cover;
 }
 
@@ -79,12 +79,12 @@ p {
 }
 
 .content-box.change {
-    background-image: url(/images/change_off.jpg);
+    background-image: url(../images/change_off.jpg);
     background-size: cover;
 }
 
 .content-box.change:hover {
-    background-image: url(/images/change_on.jpg);
+    background-image: url(../images/change_on.jpg);
 }
 
 .content-box.padding-top {
@@ -114,7 +114,7 @@ p {
 }
 
 #sidebar .sidebar-background {
-    background-image: url(/images/character/namir_full_crop.png);
+    background-image: url(../images/character/namir_full_crop.png);
     background-size: cover;
 }
 
