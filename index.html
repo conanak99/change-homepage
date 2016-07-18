@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/page.css" type="text/css" />
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+  <title>Change! Home Page</title>
+</head>
 
-    <title>Change</title>
-  </head>
+<body>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/conanak99/change-homepage">View on GitHub</a>
-  </body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div id="sidebar" class="content-box white-box padding-top">
+          <h3 class="center">Welcome to</h3>
+          <img class="fluid" src="images/meow-logo.png"></img>
+
+          <div class="sidebar-background transparent-60">
+          <img class="fluid-force place-holder-img" src="images/character/namir_full_crop.png"></img>
+          </div>
+          <div class="socials">
+            <a><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/twitter-48.png" title="Twitter" width="48"></a>
+            <a><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/facebook-48.png" title="Facebook" width="48"></a>
+            <a><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/youtube-48.png" title="YouTube" width="48"></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-8">
+        <div class="content">
+          <img class="mascot" src="images/character/namir_stand.png"></img>
+          <img class="mascot hand" src="images/character/namir_stand_hand.png"></img>
+
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="content-box padding">
+                <h3>Blah blah</h3>
+                <p>
+                  Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
+                  mi libero, ultrices at tempus at, varius sit amet mi.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-8 m-top-20">
+              <div class="content-box change">
+                <!-- Just set the image for its height, display using background -->
+                <img class="place-holder-img fluid" src="images/change_off.jpg"></img>
+              </div>
+              <div class="content-box padding m-top-20">
+                <h3>Blah blah</h3>
+                <p>
+                  Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
+                  mi libero, ultrices at tempus at, varius sit amet mi. 
+                </p>
+              </div>
+              
+              <div class="m-top-20">
+                <h4>2016 © Meowl Otome VN Production copy</h4>
+              </div>
+              
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+<script type="text/javascript" src="live.js"></script>
+<script type="text/javascript" src="page.js"></script>
+
 </html>

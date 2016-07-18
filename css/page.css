@@ -1,0 +1,148 @@
+body {
+    background-image: url(/images/bg_1.jpg);
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #e7668e;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+p {
+    color: #e7668e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.m-top-10 {
+    margin-top: 10px;
+}
+
+.m-top-15 {
+    margin-top: 15px;
+}
+
+.m-top-20 {
+    margin-top: 20px;
+}
+
+.m-bot-10 {
+    margin-bottom: 10px;
+}
+
+.m-bot-15 {
+    margin-bottom: 15px;
+}
+
+.m-bot-20 {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 980px;
+    padding: 1em;
+}
+
+.content {
+    position: relative;
+}
+
+.content > div {
+    padding-top: 160px;
+}
+
+.mascot {
+    position: absolute;
+    right:0;
+    top:-20px;
+    z-index: -1;
+    width: 300px;
+}
+
+.mascot.hand {
+    z-index: 0;
+}
+
+.content-box {
+     background: linear-gradient(to bottom, rgba(255,255,255, 0.8) 1%,rgba(249,223,231,0.8) 100%);
+     border: pink 0.6em solid;
+     border-radius: 1em;
+     min-height: 15vh;
+}
+
+.content-box.change {
+    background-image: url(/images/change_off.jpg);
+    background-size: cover;
+}
+
+.content-box.change:hover {
+    background-image: url(/images/change_on.jpg);
+}
+
+.content-box.padding-top {
+    padding-top: 1em;
+}
+
+.content-box.padding {
+    padding: 1em;
+}
+
+#sidebar {
+    position: relative;
+}
+
+#sidebar .socials {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+#sidebar .socials a {
+    display: inline-block;
+    background-color: white;
+    border: pink 3px solid;
+    border-radius: 0.5em;
+    width: 40px;
+}
+
+#sidebar .sidebar-background {
+    background-image: url(/images/character/namir_full_crop.png);
+    background-size: cover;
+}
+
+.place-holder-img {
+    opacity: 0;
+}
+
+.white-box {
+    background: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.transparent-80 {
+    opacity: 0.8;
+}
+
+.transparent-60 {
+    opacity: 0.6;
+}
+
+.center {
+    text-align: center;
+}
+
+.fluid-force {
+    width: 100%;
+}
+
+.fluid {
+    max-width: 100%;
+}
