@@ -1,0 +1,42 @@
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none !important;
+}
+
+@media only screen and (max-width: 48em) {
+    .visible-xs {
+        display: flex !important;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .visible-sm {
+        display: flex !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .visible-md {
+        display: flex !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .visible-lg {
+        display: flex !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}

@@ -1,12 +1,24 @@
 body {
     background-image: url(../images/bg_1.jpg);
-    background-size: cover;
+    width: 100vw; 
 }
 
-h1, h2, h3, h4, h5 {
+a, a:hover, a:active, a:visited {
+    text-decoration:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #e7668e;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 h3 {
@@ -61,8 +73,8 @@ p {
 
 .mascot {
     position: absolute;
-    right:0;
-    top:-20px;
+    right: 0;
+    top: -20px;
     z-index: -1;
     width: 300px;
 }
@@ -72,10 +84,11 @@ p {
 }
 
 .content-box {
-     background: linear-gradient(to bottom, rgba(255,255,255, 0.8) 1%,rgba(249,223,231,0.8) 100%);
-     border: pink 0.6em solid;
-     border-radius: 1em;
-     min-height: 15vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 1%, rgba(249, 223, 231, 0.8) 100%);
+    border: pink 0.6em solid;
+    border-radius: 1em;
+    min-height: 15vh;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .content-box.change {
@@ -93,6 +106,20 @@ p {
 
 .content-box.padding {
     padding: 1em;
+}
+
+.socials {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.socials a {
+    display: inline-block;
+    background-color: white;
+    border: pink 3px solid;
+    border-radius: 0.5em;
+    width: 40px;
 }
 
 #sidebar {
@@ -145,4 +172,151 @@ p {
 
 .fluid {
     max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+#characters {
+    width: 600px;
+    position: relative;
+    padding: 0.3rem 0.3rem;
+    background-color: pink;
+}
+
+@media only screen and (max-width: 48em) {
+    #characters {
+        width: 340px;
+    }
+}
+
+#characters .col-sm-2 {
+    padding: 0.2rem 0.3rem;
+}
+
+#characters::before {
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid rgba(200, 32, 154, 0.6);
+    border-radius: 15px;
+}
+
+#characters .character {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 145px;
+    padding: 0;
+}
+
+#characters .character::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid rgba(200, 32, 154, 0.6);
+}
+
+
+/* Crop image */
+
+#characters .character .image {
+    margin-top: -5px;
+    margin-left: -5px;
+    max-width: 105px;
+}
+
+#characters .character .name {
+    color: #e7668e;
+    display: block;
+    margin-top: -35px;
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.character-info {
+    display: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: -35px;
+}
+
+.character-full-image {
+    max-height: 50vh;
+}
+
+.navigation li {
+    font-size: 1.5em;
+    cursor: pointer;
+font-family: 'Hind Vadodara', sans-serif;
+    background-color: #94dce4;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.navigation li .nav-img {
+    background-color: pink;
+    padding: 10px;
+}
+
+.navigation li .nav-img img {
+    width:  48px;
+}
+
+.navigation li .nav-text {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li a:visited {
+    color: white;
+}
+
+.navigation li:hover .nav-text, .navigation .active .nav-text {
+    display: flex;
+    font-weight: 600;
+    background-color: pink;
+    align-items: center;
+}
+
+.story-content {
+    position: relative;
+    text-align: right;
+}
+
+.story-content p {
+    position: absolute;
+    width: 70%;
+    top: 20vh;
+}
+
+.story-content img {
+    width: 45vw;
+    max-width: 400px;
+}
+
+.demo-download {
+    display: inline-block;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    border: 2px pink solid;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 2px 5px gray;
+    cursor: pointer;
+}
+
+.demo-download:hover {
+    opacity: 1;
 }
