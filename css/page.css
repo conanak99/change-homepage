@@ -1,10 +1,13 @@
 body {
     background-image: url(../images/bg_1.jpg);
-    width: 100vw; 
+    width: 100vw;
 }
 
-a, a:hover, a:active, a:visited {
-    text-decoration:none;
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
 }
 
 h1,
@@ -15,6 +18,10 @@ h5 {
     color: #e7668e;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5em;
+}
+
+.lb-data .lb-caption {
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -67,7 +74,7 @@ p {
     position: relative;
 }
 
-.content > div {
+.content>div {
     padding-top: 160px;
 }
 
@@ -108,21 +115,8 @@ p {
     padding: 1em;
 }
 
-.socials {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-}
-
-.socials a {
-    display: inline-block;
-    background-color: white;
-    border: pink 3px solid;
-    border-radius: 0.5em;
-    width: 40px;
-}
-
-#sidebar {
+#sidebar,
+.banner {
     position: relative;
 }
 
@@ -132,8 +126,15 @@ p {
     right: 0.5em;
 }
 
-#sidebar .socials a {
+.banner .socials {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+.socials a {
     display: inline-block;
+    cursor: pointer;
     background-color: white;
     border: pink 3px solid;
     border-radius: 0.5em;
@@ -177,10 +178,23 @@ p {
     display: block;
 }
 
+.copyright {
+    text-align: center;
+    margin-top: -35px;
+}
+
+@media only screen and (max-width: 48em) {
+    .copyright {
+        margin-top: 10px;
+    }
+}
+
+
 #characters {
     width: 600px;
     position: relative;
     padding: 0.3rem 0.3rem;
+    margin: 0 auto;
     background-color: pink;
 }
 
@@ -245,19 +259,24 @@ p {
     display: none;
 }
 
-.copyright {
-    text-align: center;
-    margin-top: -35px;
+.character-info .text-info {
+    margin-left: -15vw;
 }
 
 .character-full-image {
     max-height: 50vh;
 }
 
+@media only screen and (max-width: 48em) {
+    .character-info .text-info {
+        margin-left: 0;
+    }
+}
+
 .navigation li {
     font-size: 1.5em;
     cursor: pointer;
-font-family: 'Hind Vadodara', sans-serif;
+    font-family: 'Hind Vadodara', sans-serif;
     background-color: #94dce4;
     color: white;
     margin-bottom: 10px;
@@ -269,7 +288,7 @@ font-family: 'Hind Vadodara', sans-serif;
 }
 
 .navigation li .nav-img img {
-    width:  48px;
+    width: 48px;
 }
 
 .navigation li .nav-text {
@@ -281,7 +300,8 @@ font-family: 'Hind Vadodara', sans-serif;
     color: white;
 }
 
-.navigation li:hover .nav-text, .navigation .active .nav-text {
+.navigation li:hover .nav-text,
+.navigation .active .nav-text {
     display: flex;
     font-weight: 600;
     background-color: pink;
@@ -319,4 +339,24 @@ font-family: 'Hind Vadodara', sans-serif;
 
 .demo-download:hover {
     opacity: 1;
+}
+
+.gallery {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.gallery-img {
+    width: 95%;
+    border: 5px solid pink;
+    border-radius: 5px;
+    -webkit-filter: grayscale(60%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(60%);
+}
+
+.gallery-img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
 }
