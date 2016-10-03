@@ -294,6 +294,7 @@ p {
 .navigation li .nav-text {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .navigation li a:visited {
