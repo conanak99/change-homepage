@@ -1,281 +1,307 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexboxextend.css" type="text/css" />
-    <link rel="stylesheet" href="css/page.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600" rel="stylesheet" />
-    <title>Change! Character</title>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind+Vadodara:400,600|Noto+Serif|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="../css/flexboxextend.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/flexboxgrid.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/page.css" type="text/css"/>
+        <link rel="stylesheet" href="css/change.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"/>
+        <title>Change! Character</title>
+    </head>
 
-<body>
+    <body>
 
-    <div class="container">
-        <div class="row banner">
-            <img style="height:25vh" src="images/gallery/logo.png" />
+        <div class="container">
+            <div class="row banner">
+                <img style="height:25vh" src="images/logo.png"/>
 
-          <div class="socials">
-            <a href="https://twitter.com/MeowlOtomeVN"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/twitter-48.png" title="Twitter" width="48"></a>
-            <a href="https://www.facebook.com/Meowlotome/"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/facebook-48.png" title="Facebook" width="48"></a>
-            <a href="https://www.youtube.com/channel/UCWwMv2FWSK0OnOSvRA63QGQ"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/youtube-48.png" title="YouTube" width="48"></a>
-            <a href="http://meowl-otome.tumblr.com/"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/tumblr-48.png" title="Tumblr" width="48"></a>
-          </div>
-        </div>
-
-        <div class="row">
-            <div id="nav-bar" class="col-sm-3 col-xs-12">
-                <ul class="navigation">
-                    <li>
-                        <a href="change_story.html" class="row">
-                            <div class="nav-img col-xs-4">
-                                <img class="fluid" src="images/icon/story.png" />
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Story</span>
-                            </div>
-                            <div class="col-xs-1">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a class="row">
-                            <div class="nav-img col-xs-4">
-                                <img src="images/icon/character.png" />
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Character</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="change_gallery.html" class="row">
-                            <div class="nav-img col-xs-4">
-                                <img src="images/icon/gallery.png" />
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Gallery</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="change_trailer.html" class="row">
-                            <div class="nav-img col-xs-4">
-                                <img src="images/icon/trailer.png">
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Trailer</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="change_trial.html" class="row">
-                            <div class="nav-img col-xs-4">
-                                <img src="images/icon/demo.png">
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Demo</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="row">
-                            <div class="nav-img col-xs-4">
-                                <img src="images/icon/buy.png">
-                            </div>
-                            <div class="nav-text col-xs-7">
-                                <span>Buy games</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-9 col-xs-12" style="padding-left: 25px">
-
-                <div id="characters" class="row">
-                    <div class="col-sm-2">
-                        <div data-id="mai" class="character">
-                            <img class="image" data-on="images/character/mai_on.jpg" src="images/character/mai_off.jpg" />
-                            <span class="name">Mai</span>
+                <div class="socials">
+                    <div class="language">
+                        <div id="vn" class="language-choose">
+                            <img src="../images/VN.png" alt=""><br>
+                            Tiếng Việt
+                        </div>
+                        <div id="en" class="language-choose">
+                            <img src="../images/UK.png" alt=""/><br>
+                            English
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div data-id="hiep" class="character">
-                            <img class="image" data-on="images/character/hiep_on.jpg" src="images/character/hiep_off.jpg" />
-                            <span class="name">Hiep</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div data-id="tuan" class="character">
-                            <img class="image" data-on="images/character/tuan_on.jpg" src="images/character/tuan_off.jpg" />
-                            <span class="name">Tuan</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div data-id="an" class="character">
-                            <img class="image" data-on="images/character/an_on.jpg" src="images/character/an_off.jpg" />
-                            <span class="name">An</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div data-id="na" class="character">
-                            <img class="image" data-on="images/character/na_on.jpg" src="images/character/na_off.jpg" />
-                            <span class="name">Na</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div data-id="others" class="character">
-                            <img class="image" data-on="images/character/other_on.jpg" src="images/character/other_off.jpg" />
-                            <span class="name">Others</span>
-                        </div>
-                    </div>
-                </div>
+                    <br><br><br>
 
-                <div style="height: 50vh, z-index:-1">
-                    <div id="mai" class="row m-top-20 character-info">
-                        <div class="col-xs-8">
-                            <img class="character-full-image" src="images/character/mai_full.png" />
-
-                        </div>
-                        <div class="text-info col-xs-6 m-top-20">
-                            <h2>MC</h2>
-
-                            <h4>Main Character</h4>
-
-                            <p>
-                                Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
-                                mi libero, ultrices at tempus at, varius sit amet mi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="hiep" class="row m-top-20 character-info">
-                        <div class="col-sm-8 col-xs-12">
-                            <img class="character-full-image" src="images/character/hiep_full.png" />
-
-                        </div>
-                        <div class="text-info col-sm-6 col-xs-12 m-top-20">
-                            <h2>Vu Viet An</h2>
-
-                            <h4> Big Brother</h4>
-
-                            <p>
-                                Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
-                                mi libero, ultrices at tempus at, varius sit amet mi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="tuan" class="row m-top-20 character-info">
-                        <div class="col-sm-8 col-xs-12">
-                            <img class="character-full-image" src="images/character/tuan_full.png" />
-
-                        </div>
-                        <div class="text-info col-sm-6 col-xs-12 m-top-20">
-                            <h2>Vu Viet An</h2>
-
-                            <h4> Big Brother</h4>
-
-                            <p>
-                                Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
-                                mi libero, ultrices at tempus at, varius sit amet mi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="an" class="row m-top-20 character-info">
-                        <div class="col-sm-8 col-xs-12">
-                            <img class="character-full-image" src="images/character/an_full.png" />
-
-                        </div>
-                        <div class="text-info col-sm-6 col-xs-12 m-top-20">
-                            <h2>Vu Viet An</h2>
-
-                            <h4> Big Brother</h4>
-
-                            <p>
-                                Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
-                                mi libero, ultrices at tempus at, varius sit amet mi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="na" class="row m-top-20 character-info">
-                        <div class="col-sm-8 col-xs-12">
-                            <img class="character-full-image" src="images/character/na_full.png" />
-
-                        </div>
-                        <div class="text-info col-sm-6 col-xs-12 m-top-20">
-                            <h2>Vu Viet An</h2>
-
-                            <h4> Big Brother</h4>
-
-                            <p>
-                                Vestibulum non quam justo. Nullam pellentesque ligula eu tincidunt vehicula. Donec imperdiet, dui et convallis placerat, lacus mauris cursus elit, et rhoncus quam est quis odio. Phasellus a est sagittis, facilisis dolor sit amet, tincidunt tellus. Pellentesque
-                                mi libero, ultrices at tempus at, varius sit amet mi.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="others" class="row m-top-20 character-info">
-                        <div class="col-xs-12">
-                            <img class="fluid character-full-image" src="images/character/other.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row copyright">
-                    <h4 style="margin: 0 auto">2016 © Meowl Otome VN Production</h4>
+                    <a href="https://twitter.com/MeowlOtomeVN"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/twitter-48.png" title="Twitter" width="48"></a>
+                    <a href="https://www.facebook.com/Meowlotome/"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/facebook-48.png" title="Facebook" width="48"></a>
+                    <a href="https://www.youtube.com/channel/UCWwMv2FWSK0OnOSvRA63QGQ"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/youtube-48.png" title="YouTube" width="48"></a>
+                    <a href="http://meowl-otome.tumblr.com/"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/tumblr-48.png" title="Tumblr" width="48"></a>
                 </div>
             </div>
-        </div>
 
-</body>
+            <div class="row">
+                <div id="nav-bar" class="col-sm-3 col-xs-12">
+                    <ul class="navigation">
+                        <li>
+                            <a href="story.html" class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img class="fluid" src="images/icon/story.png"/>
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span lang="vn">Cốt truyện</span>
+                                </div>
+                                <div class="col-xs-1"></div>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="character.html" class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img src="images/icon/character.png"/>
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span lang="vn">Nhân vật</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img src="images/icon/gallery.png"/>
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span lang="vn">Thư viện ảnh</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="trailer.html" class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img src="images/icon/trailer.png">
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span>Trailer</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="trial.html" class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img src="images/icon/demo.png">
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span>Demo</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="row">
+                                <div class="nav-img col-xs-4">
+                                    <img src="images/icon/buy.png">
+                                </div>
+                                <div class="nav-text col-xs-7">
+                                    <span lang="vn">Mua game</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 col-xs-12" style="padding-left: 25px">
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="page.js"></script>
+                    <div id="characters" class="row">
+                        <div class="col-sm-2">
+                            <div data-id="mai" class="character">
+                                <img class="image" data-on="images/character/mai_on.jpg" src="images/character/mai_off.jpg"/>
+                                <span class="name">Mai</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-id="hiep" class="character">
+                                <img class="image" data-on="images/character/hiep_on.jpg" src="images/character/hiep_off.jpg"/>
+                                <span class="name">Hiep</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-id="tuan" class="character">
+                                <img class="image" data-on="images/character/tuan_on.jpg" src="images/character/tuan_off.jpg"/>
+                                <span class="name">Tuan</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-id="an" class="character">
+                                <img class="image" data-on="images/character/an_on.jpg" src="images/character/an_off.jpg"/>
+                                <span class="name">An</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-id="na" class="character">
+                                <img class="image" data-on="images/character/na_on.jpg" src="images/character/na_off.jpg"/>
+                                <span class="name">Na</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-id="others" class="character">
+                                <img class="image" data-on="images/character/other_on.jpg" src="images/character/other_off.jpg"/>
+                                <span lang="vn" class="name">Khác</span>
+                            </div>
+                        </div>
+                    </div>
 
-<script type="text/javascript">
-    $(function() {
-        $('.character .image').each(function(index, element) {
-            var src = $(element).attr('src');
-            $(element).data('off', src).data('active', false);
-        });
+                    <div style="height: 50vh, z-index:-1">
+                        <div id="mai" class="row m-top-20 character-info">
+                            <div class="col-xs-7">
+                                <img class="character-full-image" src="images/character/mai_full.png"/>
 
-        $('.character').hover(
-            function() {
-                var element = $(this).find('.image');
-                element.attr('src', element.data('on'));
-            },
-            function() {
-                var element = $(this).find('.image');
-                if (!element.data('active')) {
-                    element.attr('src', element.data('off'));
-                };
-            });
+                            </div>
+                            <div class="text-info col-xs-8 m-top-20">
+                                <h2>Trần Hồng Mai</h2>
 
-        $('.character').click(
-            function() {
+                                <h4 lang="vn" data-lang-token="mai-tag">Nữ chính (Tên có thể thay đổi)</h4>
+
+                                <p class="character-content" lang="vn" data-lang-token="mai-content">
+                                  Cha mẹ Mai đều là bác sĩ, và đây là lí do khiến gia đình cô hiếm khi sum vầy đông đủ.
+                                  Cũng bởi vậy, Mai đã quen với việc tự lập và sống một mình từ sớm.
+                                  Ở tuổi 17, cũng như bao nữ sinh khác, mối quan tâm chính của Mai là điểm số và các mối quan hệ với bạn bè, người thân.
+                                  Cô cũng thầm mong có được một người bạn trai tốt. Tiếc thay, dù để mắt tới cậu bạn hot boy cùng lớp, cô lại có chút ngại ngùng và không dám bắt chuyện.
+                                  Mặt khác, Mai rất yêu quý những người bạn của mình và luôn sẵn sàng làm tất cả vì họ.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="hiep" class="row m-top-20 character-info">
+                            <div class="col-sm-7 col-xs-12">
+                                <img class="character-full-image" src="images/character/hiep_full.png"/>
+
+                            </div>
+                            <div class="text-info col-sm-7 col-xs-12 m-top-20">
+                                <h2>Nguyễn Đức Hiệp</h2>
+
+                                <h4 lang="vn" data-lang-token="hiep-tag">Hàng xóm và bạn thơ ấu của nữ chính</h4>
+
+                                <p class="character-content" lang="vn" data-lang-token="hiep-content">
+                                     Vì một vài lí do mà cha mẹ Hiệp sống li thân, thỉnh thoảng mới trở về thăm con. Hoàn cảnh gần giống với Mai nên hai đứa trẻ hiểu và trở nên thân thiết với nhau.
+                                     Hiệp đã từng là một cậu bé trầm tính, ít nói nhưng luôn dịu dàng chu đáo và rất tình cảm.
+                                     Tuy nhiên, từ khi lên cấp ba, cậu thay đổi hoàn toàn.
+                                     Hiệp trở nên lạnh lùng, cau có và tỏ ra bất cần hơn cũng như thích châm chọc và gây sự với Mai. 
+                                     Liệu bạn có thể tìm ra nguyên nhân của sự thay đổi đó và gặp lại cậu bạn dịu dàng thuở xưa?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="tuan" class="row m-top-20 character-info">
+                            <div class="col-sm-7 col-xs-12">
+                                <img class="character-full-image" src="images/character/tuan_full.png"/>
+
+                            </div>
+                            <div class="text-info col-sm-7 col-xs-12 m-top-20">
+                                <h2>Lê Anh Tuấn</h2>
+
+                                <h4 lang="vn" data-lang-token="tuan-tag">Hot boy cùng lớp</h4>
+
+                                <p class="character-content" lang="vn" data-lang-token="tuan-content">
+                                    Tuấn nổi tiếng trong trường nhờ vẻ ngoài điển trai, giỏi thể thao và cực kì ga lăng thân thiện với tất cả mọi người.
+                                    Tuy nhiên, cậu cũng chơi thân với một số học sinh thuộc dạng “cá biệt” mà ít ai dám đến gần.
+                                    Đây cũng là lí do khiến Mai e ngại kết bạn với cậu, dù cô cũng bị nụ cười tỏa nắng của Tuấn thu hút.
+                                    Sau khi bị hoán đổi cơ thể với Hiệp, Mai nhận ra có gì đó khá lạ trong mối quan hệ giữa Tuấn với Hiệp, liệu bạn có thể tìm ra điều đó là gì không?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="an" class="row m-top-20 character-info">
+                            <div class="col-sm-7 col-xs-12">
+                                <img class="character-full-image" src="images/character/an_full.png"/>
+
+                            </div>
+                            <div class="text-info col-sm-7 col-xs-12 m-top-20">
+                                <h2>Vũ Việt An</h2>
+
+                                <h4 lang="vn" data-lang-token="an-tag">Anh trai tốt</h4>
+
+                                <p class="character-content" lang="vn" data-lang-token="an-content">
+                                    An là anh họ của Na và là một chàng trai thông minh, hiền lành, chăm chỉ.
+                                    An luôn tỏ ra rất quan tâm, lo lắng cũng như để mắt đến cô em họ khó chiều của mình.
+                                    Đồng thời, An cũng là người luôn sẵn sàng giúp đỡ Mai trong việc học hành hay đơn giản là lắng nghe nhữngtâm sự của cô.
+                                    Chàng trai 20 tuổi này thường xuyên bị nhầm là học sinh cấp hai vì gương mặt khá trẻ con của mình.
+                                    Nếu bạn muốn kết thân với An trong game, hãy chuẩn bị tinh thần để tận hưởng sự ngọt ngào của anh chàng này nhé!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="na" class="row m-top-20 character-info">
+                            <div class="col-sm-7 col-xs-12">
+                                <img class="character-full-image" src="images/character/na_full.png"/>
+
+                            </div>
+                            <div class="text-info col-sm-7 col-xs-12 m-top-20">
+                                <h2>Vũ Ngọc Anh (Na)</h2>
+
+                                <h4 lang="vn" data-lang-token="na-tag">Bạn tốt nhất của Mai</h4>
+
+                                <p class="character-content" lang="vn" data-lang-token="na-content">
+                                    Ngọc Anh là con gái duy nhất trong một gia đình khá giả với người mẹ là chủ tịch một tập đoàn lớn còn cha cô là công chức nhà nước.
+                                    Mặc dù đích thực là một tiểu thư giàu có nhưng cô không hề tỏ ra kênh kiệu hay xa cách.
+                                    Trái lại, cô hòa đồng, thân thiện, cá tính và luôn tràn đầy năng lượng (đôi khi hơi quá đà).
+                                    Mọi người đều thân mật gọi cô bằng cái tên Na.
+                                    Thỉnh thoảng cô tiểu thư cứng đầu này lại có những hành động, phát ngôn và suy nghĩ không giống ai.
+                                    Bên cạnh đó, Na cũng rất tình cảm và yêu quý Mai như chị em ruột thịt vậy.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="others" class="row m-top-20 character-info">
+                            <div class="col-xs-12">
+                                <img class="fluid character-full-image" src="images/character/other.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row copyright">
+                        <h4 style="margin: 0 auto">2016 © Meowl Otome VN Production</h4>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-lang.js"></script>
+        <script type="text/javascript" src="js/lang.js"></script>
+        <script type="text/javascript" src="../js/page.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
                 $('.character .image').each(function(index, element) {
-                    var element = $(element);
-                    element.attr('src', element.data('off')).data('active', false);
+                    var src = $(element).attr('src');
+                    $(element).data('off', src).data('active', false);
                 });
 
+                $('.character').hover(function() {
+                    var element = $(this).find('.image');
+                    element.attr('src', element.data('on'));
+                }, function() {
+                    var element = $(this).find('.image');
+                    if (!element.data('active')) {
+                        element.attr('src', element.data('off'));
+                    };
+                });
 
-                var element = $(this).find('.image');
-                element.attr('src', element.data('on')).data('active', true);
+                $('.character').click(function() {
+                    $('.character .image').each(function(index, element) {
+                        var element = $(element);
+                        element.attr('src', element.data('off')).data('active', false);
+                    });
 
-                $('.character-info').fadeOut('slow');
-                $('#' + $(this).data('id')).fadeIn('slow').css('display', 'flex');
+                    var element = $(this).find('.image');
+                    element.attr('src', element.data('on')).data('active', true);
+
+                    $('.character-info').fadeOut('slow');
+                    $('#' + $(this).data('id')).fadeIn('slow').css('display', 'flex');
+                });
+
+                $('.character')[0].click();
+
             });
+        </script>
 
-        $('.character')[0].click();
-
-    });
-</script>
-
-</html>
+    </html>
