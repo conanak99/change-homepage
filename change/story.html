@@ -6,21 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexboxextend.css" type="text/css" />
-    <link rel="stylesheet" href="css/page.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600" rel="stylesheet" />
-    <title>Change! Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind+Vadodara:400,600|Noto+Serif|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/flexboxextend.css" type="text/css" />
+    <link rel="stylesheet" href="../css/flexboxgrid.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/page.css" type="text/css" />
+    <link rel="stylesheet" href="css/change.css" type="text/css" />
+    <title>Change! Story</title>
 </head>
 
 <body>
 
     <div class="container">
         <div class="row banner">
-            <img style="height:25vh" src="images/gallery/logo.png" />
+            <img style="height:25vh" src="images/logo.png" />
+
           <div class="socials">
+            <div class="language">
+              <div id="vn" class="language-choose">
+                <img src="../images/VN.png" alt=""><br>
+                Tiếng Việt
+              </div>
+              <div id="en" class="language-choose">
+                <img src="../images/UK.png" alt="" /><br>
+                English
+              </div>
+            </div>
+            <br><br>
+
             <a href="https://twitter.com/MeowlOtomeVN"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/twitter-48.png" title="Twitter" width="48"></a>
             <a href="https://www.facebook.com/Meowlotome/"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/facebook-48.png" title="Facebook" width="48"></a>
             <a href="https://www.youtube.com/channel/UCWwMv2FWSK0OnOSvRA63QGQ"><img class="fluid" src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/youtube-48.png" title="YouTube" width="48"></a>
@@ -31,13 +43,13 @@
         <div class="row">
             <div id="nav-bar" class="col-sm-3 col-xs-12">
                 <ul class="navigation">
-                    <li>
-                        <a href="change_story.html" class="row">
+                    <li class="active">
+                        <a class="row">
                             <div class="nav-img col-xs-4">
                                 <img class="fluid" src="images/icon/story.png" />
                             </div>
                             <div class="nav-text col-xs-7">
-                                <span>Story</span>
+                                <span lang="vn">Cốt truyện</span>
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -49,17 +61,17 @@
                                 <img src="images/icon/character.png" />
                             </div>
                             <div class="nav-text col-xs-7">
-                                <span>Character</span>
+                                <span lang="vn">Nhân vật</span>
                             </div>
                         </a>
                     </li>
-                    <li class="active">
-                        <a class="row">
+                    <li>
+                        <a href="change_gallery.html" class="row">
                             <div class="nav-img col-xs-4">
                                 <img src="images/icon/gallery.png" />
                             </div>
                             <div class="nav-text col-xs-7">
-                                <span>Gallery</span>
+                                <span lang="vn">Thư viện ảnh</span>
                             </div>
                         </a>
                     </li>
@@ -89,39 +101,20 @@
                                 <img src="images/icon/buy.png">
                             </div>
                             <div class="nav-text col-xs-7">
-                                <span>Buy games</span>
+                                <span lang="vn">Mua game</span>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-sm-9 col-xs-12" style="padding-left: 25px">
-
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12 gallery">
-                        <a href="images/gallery/img_1.jpg" data-lightbox="image-1" data-title="Handsome Boy">
-                            <img class="gallery-img" src="images/gallery/img_1.jpg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 gallery">
-                        <a href="images/gallery/img_2.jpg" data-lightbox="image-1" data-title="Romance">
-                            <img class="gallery-img" src="images/gallery/img_2.jpg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 gallery">
-                        <a href="images/gallery/img_3.jpg" data-lightbox="image-1" data-title="Handsome boys">
-                            <img class="gallery-img" src="images/gallery/img_3.jpg" />
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 gallery">
-                        <a href="images/gallery/img_4.jpg" data-lightbox="image-1" data-title="Birthday party">
-                            <img class="gallery-img" src="images/gallery/img_4.jpg" />
-                        </a>
-                    </div>
-
+                <div class="story-content">
+                    <p lang="vn" token="story-content">CHANGE! đưa bạn đến với thế giói của Trần Hồng Mai (tên có thể thay đổi), một nữ sinh cấp ba bình thường, sống mộtcuộc đời yên bình và buồn tẻ cho đến ngày  sinh nhật thứ 17. Cơ thể cô đột nhiên bị hoán đổi với cậu bạn hàng xóm của mình là  Nguyễn Đức Hiệp. Không thể tìm ra nguyên do, họ đành tạmchấp nhận sự thật mà tiếp tục  đi học và sinh hoạt như bình thường,  vừa cố gắng không để người khác phát hiện, vừa hy vọng sẽ tìm ra cách quay trở lại.
+                    </p>
+                    <img src="images/story.png" />
                 </div>
 
-                <div class="row m-top-20">
+                <div class="row copyright">
                     <h4 style="margin: 0 auto">2016 © Meowl Otome VN Production</h4>
                 </div>
             </div>
@@ -130,8 +123,8 @@
 </body>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-<script type="text/javascript" src="live.js"></script>
-<script type="text/javascript" src="page.js"></script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+<script type="text/javascript" src="../js/jquery-lang.js"></script>
+<script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="../js/page.js"></script>
 </html>
